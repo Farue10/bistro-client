@@ -5,18 +5,27 @@ const Navbar = () => {
      <NavLink
   to="/"
   className={({ isActive }) =>
-     isActive ? "btn btn-secondary mr-4" : "btn btn-primary"
+     isActive ? "btn btn-secondary mr-4" : "btn btn-primary mr-4"
   }
 >
  Home
 </NavLink>
      <NavLink
-  to="/content"
+  to="/menu"
   className={({ isActive})  =>
-  isActive ? "btn btn-secondary mr-4" : "btn btn-primary"
+  isActive ? "btn btn-secondary mr-4" : "btn btn-primary mr-4"
   }
 >
- Content
+ Menu
+</NavLink>
+
+     <NavLink
+  to="/order/salad"
+  className={({ isActive})  =>
+  isActive ? "btn btn-secondary " : "btn btn-primary"
+  }
+>
+ Order
 </NavLink>
     </>
     return (
